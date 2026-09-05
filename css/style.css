@@ -270,16 +270,18 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
 @media (max-width: 899px) {
   .main-nav {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 8px);
     left: 0;
     right: 0;
     background: var(--cream);
     border-bottom: 1px solid var(--border-soft);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px -18px rgba(23, 74, 53, 0.35);
     flex-direction: column;
     padding: 8px 24px 24px;
     gap: 4px;
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.3s ease;
   }
   .main-nav.is-open { display: flex; max-height: 320px; }

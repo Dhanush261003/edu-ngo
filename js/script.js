@@ -5,7 +5,7 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 /* Sticky header */
 (function headerScroll() {
   const header = document.getElementById('siteHeader');
-  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > window.innerHeight * 0.5);
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 0);
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 })();

@@ -183,7 +183,7 @@ button, input, select, textarea { font-family: inherit; font-size: inherit; }
   padding-block: 12px;
   transition: padding 0.3s ease;
 }
-.site-header.is-scrolled .header-inner { padding-block: 12px; }
+.site-header.is-scrolled .header-inner { padding-block: 10px; }
 
 @media (max-width: 899px) {
   .header-inner { padding-block: 18px; }
